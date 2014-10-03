@@ -75,12 +75,12 @@ end
 
 template "/var/FastRWeb/code/rserve.conf" do
   source "rserve.conf.erb"
-  variables({:port => '80', :fastrweb_base_dir => '/var/FastRWeb'})
+  variables({ port: '80', fastrweb_base_dir: '/var/FastRWeb' })
   mode "0644"
 end
 
 template "/var/FastRWeb/code/rserve.R" do
   source "rserve.R.erb"
-  variables({:port => '80', :fastrweb_base_dir => '/var/FastRWeb'})
+  variables({ port: '80', fastrweb_base_dir: '/var/FastRWeb' })
   mode "0644"
 end
