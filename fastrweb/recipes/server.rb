@@ -37,7 +37,7 @@ end
 ##
 ## install R
 ##
-package "r-core" do
+package "R" do
         action :install
 end
 
