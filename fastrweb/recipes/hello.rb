@@ -9,8 +9,8 @@
 
 log "Hello world from fastrweb/recipes/default.rb"
 
-file "#{ENV['HOME']}/fastrweb.txt" do
-  content "Content: Hello world from fastrweb/recipes/default.rb
-"
+template "#{ENV['HOME']}/fastrweb.txt" do
+  source "fastrweb.txt.erb"
+  variables({:version => '0'})
   mode "0644"
 end
