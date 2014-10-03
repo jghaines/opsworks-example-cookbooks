@@ -53,11 +53,9 @@ end
 ##
 ## Install Rcgi in cgi-bin
 ##
-file "/var/www/cgi-bin/Rcgi" do
-  owner 'root'
-  group 'root'
-  mode 0755
-  content ::File.open('/usr/lib64/R/library/FastRWeb/cgi-bin/Rcgi').read
-  action :create
+bash "install_cgi-bin_Rcgi" do
+  code <<-EOL
+  cp /usr/lib64/R/library/FastRWeb/cgi-bin/Rcgi /var/www/cgi-bin/Rcgi
+  EOL
 end
 
