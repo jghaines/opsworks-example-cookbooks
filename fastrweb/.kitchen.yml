@@ -10,7 +10,16 @@ platforms:
   - name: centos-6.4
 
 suites:
-  - name: default
+  - name: hello
     run_list:
-      - recipe[fastrweb::default]
+      - recipe[fastrweb::hello]
+    attributes:
+  - name: server
+    run_list:
+      - recipe[fastrweb::server]
+      - recipe[fastrweb::start]
+    attributes:
+  - name: deploy
+    run_list:
+      - recipe[fastrweb::deploy]
     attributes:
