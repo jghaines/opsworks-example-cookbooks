@@ -4,6 +4,6 @@ maintainer_email 'chef@geldberg.com'
 license          'All rights reserved'
 description      'Installs/Configures fastrweb'
 long_description 'Installs/Configures fastrweb'
-version          '0.1.5'
+version          '0.1.6'
 
 supports 'amazon'

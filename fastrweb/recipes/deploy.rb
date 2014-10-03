@@ -9,7 +9,7 @@
 
 log "Hello world from fastrweb/recipes/deploy.rb"
 
-node[:deploy].each do |node_deploy] 
+node[:deploy].each do |node_deploy|
 	log "In a node"
 	log "#{node_deploy[:deploy_to]}"
 end
