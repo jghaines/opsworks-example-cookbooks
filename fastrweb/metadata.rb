@@ -4,5 +4,6 @@ maintainer_email 'chef@geldberg.com'
 license          'All rights reserved'
 description      'Installs/Configures fastrweb'
 long_description 'Installs/Configures fastrweb'
-version          '0.1.3'
+version          '0.1.4'
 
+depends 'apache2'
